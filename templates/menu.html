@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<h1>Coffee Menu</h1>
+<div>
+    <pre>Testing</pre>
+    <ul>
+        {% for menu in page_menu %}
+            <li>{{ menu.coffee_name }} : ฿{{ menu.price }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{# ul>li*3 #}
+{#<ul>#}
+{#    <li>Esspresso</li>#}
+{#    <li>Americano</li>#}
+{#    <li>Latte</li>#}
+{#</ul>#}
+</body>
+</html>
